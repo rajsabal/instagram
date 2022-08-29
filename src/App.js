@@ -97,7 +97,7 @@ function App() {
         <div >
          <form className="form_div"> 
          <div>
-            <label className='label' >Email</label>
+            <label className='label' >Username</label>
             
               <Input
                className='field_class '

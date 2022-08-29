@@ -33,6 +33,7 @@ function ImageUpload({username}) {
         },
         () => {
           // complete function
+          
           getDownloadURL(uploadTask.snapshot.ref)
             .then((url) => {
               db.collection("posts").add({

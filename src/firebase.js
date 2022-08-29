@@ -6,14 +6,13 @@ import 'firebase/compat/firestore';
 
 
   const firebaseApp =firebase.initializeApp({
-    apiKey: "AIzaSyArrzqDqS66hlBBAYIvUuUXIzS9VqGmHD0",
-    authDomain: "tinder-31751.firebaseapp.com",
-    databaseURL: "https://tinder-31751-default-rtdb.firebaseio.com",
-    projectId: "tinder-31751",
-    storageBucket: "tinder-31751.appspot.com",
-    messagingSenderId: "235715914045",
-    appId: "1:235715914045:web:74180dd8f49882b5523d54",
-    measurementId: "G-6MYBNHQKZ6"
+    apiKey: "AIzaSyCUAPwTz26EUWd2Akx1AWWPl-u1bdC1Wy4",
+    authDomain: "instagram-4f464.firebaseapp.com",
+    projectId: "instagram-4f464",
+    storageBucket: "instagram-4f464.appspot.com",
+    messagingSenderId: "1020933942295",
+    appId: "1:1020933942295:web:ac42855f6655cbf2198052",
+    measurementId: "G-Q16Q9Q8LLC"
   });
 const db=firebaseApp.firestore();
 const auth =firebase.auth();

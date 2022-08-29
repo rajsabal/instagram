@@ -152,15 +152,20 @@ function Post({postId ,user , username, caption, imgurl, likeCount,posttimestamp
     const monthNames = ["January", "February", "March", "April", "May", "June",
   "July", "August", "September", "October", "November", "December"
 ];
-    var date=new Date(Date.now());
-    if(posttimestamp)
-     date=posttimestamp.toDate();
-     else posttimestamp=Date(Date.now());
-    const d=date.getDate();
-  const m=   date.getMonth()
-  const y=date.getFullYear();
+  var posttime=new Date(Date.now());     
+  var pt=Date.now();
+  if(posttimestamp!==null){  posttime=posttimestamp.toDate();
+    pt=posttimestamp.toDate().getTime();
+  }
+    var date=Date.now();
+
+    var d,m,y;
+    if(posttimestamp!==null){
+   d=posttime.getDate();
+  m=   posttime.getMonth()
+   y=posttime.getFullYear();}
    var time="";
-   var timeDifference=new Date(Date.now()).getTime()-posttimestamp.toDate();
+   var timeDifference=date-pt;
    if(timeDifference<60000){
     time="just now"
 }
